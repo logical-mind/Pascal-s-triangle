@@ -2,9 +2,9 @@ function currentRow(num) {
   const row = (-1 + Math.sqrt(1 + 8 * num)) / 2;
   return row;
 }
+
 let num = [];
 for (let i = 0; i <= 65; i++) {
-  console.log(currentRow(i));
   if (
     i === 0 ||
     currentRow(i) % 1 === 0 ||
@@ -17,6 +17,8 @@ for (let i = 0; i <= 65; i++) {
     );
   }
 }
+
+
 
 // Html css view
 function rowsHtml(num) {
